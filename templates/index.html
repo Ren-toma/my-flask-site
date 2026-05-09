@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Personal Dashboard</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="card">
+        <h1 id="name">Loading...</h1>
+        <p class="role" id="role">...</p>
+
+        <div class="status-box">
+            Current Status: <span id="status">...</span>
+        </div>
+
+        <div class="quote" id="quote">"..."</div>
+
+        <hr>
+
+        <input type="text" id="statusInput" placeholder="Update my status...">
+        <button id="updateBtn">Update Status</button>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
